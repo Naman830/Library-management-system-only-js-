@@ -30,12 +30,12 @@ button.primary {
 button.primary:hover {
   opacity: 0.85;
 }
- a {
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-text-decoration: underline;
-color: var(--tp-primary-color);
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  color: var(--tp-primary-color);
 }
 
 h2 {
@@ -153,19 +153,18 @@ img {
   color: var(--tp-gray-color);
   max-width: 528px;
 }
-.remember-me label{
-font-weight: 400;
-font-size: 16px;
-line-height: 39px;
-
+.remember-me label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 39px;
 }
-#checkbox{
+#checkbox {
   width: 14px;
   height: 14px;
 }
 
 @media (max-width: 1000px) {
-  .logo{
+  .logo {
     display: none;
   }
 }
