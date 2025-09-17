@@ -89,6 +89,7 @@ img {
   height: 100vh; /* 👈 full screen height */
   display: flex;
   flex: 1;
+  padding: 0px;
 }
 
 .image-container {

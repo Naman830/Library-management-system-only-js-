@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Ublue Library</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section class="sign-up-section">
+      <div
+        class="main-sign-container container-fluid d-flex flex-column flex-lg-row gap-4 m-auto"
+      >
+        <!-- IMAGE CONTAINER -->
+        <div
+          class="image-container col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <img src="images/ublue-logo.png" alt="Logo" class="logo" />
+          <img src="images/sign-up.svg" alt="Libraryman" class="img-fluid" />
+        </div>
+
+        <!-- FORM CONTAINER -->
+        <div
+          class="form-container col-lg-6 d-flex align-items-center flex-column justify-content-center"
+        >
+          <form
+            id="registerForm"
+            class="w-100 d-flex flex-column align-items-center"
+          >
+            <div
+              class="form-inner-container w-100 d-flex flex-column align-items-center"
+            >
+              <div class="form-inputs">
+                <div class="text-start">
+                  <h2>Let's Get Started</h2>
+                </div>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-inputs">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required />
+              </div>
+
+              <div class="form-inputs">
+                <label for="studentid">Admin Id</label>
+                <input type="text" id="adminId" name="adminid" />
+              </div>
+
+              <div class="form-inputs password-wrapper">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                  <input type="password" name="password" id="password" />
+                  <button type="button" id="toggleBtn">
+                    <img src="images/eye.png" alt="Toggle Password" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-inputs password-wrapper">
+                <label for="confirmpassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmpassword"
+                  id="confirmPassword"
+                />
+              </div>
+
+              <button type="submit" class="primary">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sign-up.js"></script>
+  </body>
+</html>
