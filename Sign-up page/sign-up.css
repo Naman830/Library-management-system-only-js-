@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-button {
+button.primary {
   width: 528px;
   height: 60px;
   border-radius: 20px;
@@ -30,7 +30,7 @@ button {
   line-height: 28px;
 }
 
-button:hover {
+button.primary:hover {
   opacity: 0.85;
 }
 
@@ -102,4 +102,31 @@ img {
   gap: 10px;
   flex-direction: column;
   margin-bottom: 1.6rem;
+}
+
+.input-wrapper {
+  position: relative;
+  width: fit-content; /* or 100% if you want full width */
+}
+
+.input-wrapper input {
+  width: 528px;  /* your input width */
+  height: 55px;
+  padding-right: 40px; /* add space for the icon */
+}
+
+#toggleBtn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  border-left: 1px solid var(--tp-gray-color);
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#toggleBtn  img{
+  width: 26px;
 }
