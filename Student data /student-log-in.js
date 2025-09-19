@@ -28,11 +28,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   localStorage.setItem("user", JSON.stringify(user));
 
   // Redirect depending on role
-  if (user.role === "admin") {
-    window.location.href = "admin-dashboard.html";
-  } else {
-    window.location.href = "student-home.html";
-  }
+       window.location.href = "student-home.html";
 
   document.getElementById("loginForm").reset();
 });
