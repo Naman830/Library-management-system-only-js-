@@ -49,18 +49,16 @@ document
     document.getElementById("registerForm").reset();
     window.location.href = "admin-log-in.html";
   });
-
-// Password toggle
 const toggleBtn = document.getElementById("toggleBtn");
-const password = document.getElementById("password");
-const toggleEye = document.querySelector(".toggleEye");
+const passwordInput = document.getElementById("password");
+const toggleIcon = toggleBtn.querySelector("img"); // Get the img inside the button
 
 toggleBtn.addEventListener("click", () => {
-  if (password.type === "password") {
-    password.type = "text";
-    toggleEye.src = "images/eye-close-up.png";
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    toggleIcon.src = "../images/eye-open.png"; // corrected path
   } else {
-    password.type = "password";
-    toggleEye.src = "images/eye.png";
+    passwordInput.type = "password";
+    toggleIcon.src = "../images/eye-close.png"; // corrected path
   }
 });
