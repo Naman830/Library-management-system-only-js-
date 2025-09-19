@@ -17,4 +17,4 @@ function selectRole() {
 }
 
 
-selectRole();
+document.addEventListener("DOMContentLoaded", selectRole);
