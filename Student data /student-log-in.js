@@ -8,9 +8,9 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   let users = JSON.parse(localStorage.getItem("users")) || [];
 
   // Find user by username or studentid
-  let user = users.find(
-    (u) => u.username === usernameOrId || u.studentid === usernameOrId
-  );
+  let user = users.find(function (u) {
+    return u.username === usernameOrId || u.studentid === usernameOrId;
+  });
 
   if (!user) {
     alert("Username or Student ID is incorrect. Please enter valid details.");
