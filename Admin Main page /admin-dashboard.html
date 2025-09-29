@@ -19,7 +19,7 @@
   <body>
     <section class="dashboard-section container-fluid row">
       <div
-        class="dashboard-left-container col-md-2 d-flex align-items-start flex-column"
+        class="dashboard-left-container col-md-2 d-flex align-items-center flex-column"
       >
         <div class="logo-container mb-4">
           <img src="../images/main-side-logo.png" alt="Logo" class="logo" />
@@ -80,12 +80,49 @@
 
             <!-- Right: Settings Button -->
             <div class="settings-container">
-              <button id="credential-btn"><i class="fa-solid fa-gear"></i></button>
+              <button id="credential-btn">
+                <i class="fa-solid fa-gear"></i>
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="dashboard-view-container w-100"></div>
+        <div class="dashboard-view-container row">
+          <div class="pie-chart-container col-md-6">
+            <div>
+              <img src="../images/pie-chart.png" alt="" />
+            </div>
+
+            <div
+              class="pie-data-container d-flex align-items-center justify-content-between"
+            >
+              <div class="book-logo">
+                <img src="../images/logo 1 (1)(1).png" alt="logo" />
+              </div>
+
+              <div class="custom-divider-2 mx-3"></div>
+
+              <div class="pie-inner-data d-flex flex-column">
+                <div class="area-pie">
+                  <i class="fa-solid fa-circle"></i>
+                  <h2>Total Borrowed Books</h2>
+                </div>
+
+                <div class="area-pie">
+                  <i class="fa-solid fa-circle" id="return-icon"></i>
+                  <h2>Total Returned Books</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-dashboard-grid col-md-6">
+            <div class="grid-item">Box 1</div>
+            <div class="grid-item">Box 2</div>
+            <div class="grid-item">Box 3</div>
+            <div class="grid-item">Box 4</div>
+          </div>
+        </div>
       </div>
     </section>
 
