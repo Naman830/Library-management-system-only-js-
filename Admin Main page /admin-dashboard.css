@@ -6,6 +6,12 @@
   --tp-gray-color: #718096;
 }
 
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
 body {
   background-color: var(--tp-bg-color);
   font-family: "Roboto", sans-serif;
@@ -19,22 +25,31 @@ h4 {
   margin: 0px;
 }
 
-img{
-    max-width: 100%;
+h3{
+font-weight: 500;
+font-size: 13px;
+line-height: 140%;
+color: var(--tp-black-color);
+}
+
+img {
+  max-width: 100%;
 }
 /* ================================== */
-
+.dashboard-section{
+    margin: 0px;
+    padding: 0px;
+}
 .dashboard-left-container {
   background-color: var(--tp-primary-color);
   height: 100vh;
-  padding: 0px 0px ;
+  padding: 0px 0px;
   padding-bottom: 60px;
-
 }
-.sidebar-items{
-    gap: 20px;
-    flex-grow: 1; 
-    padding-top: 20px;
+.sidebar-items {
+  gap: 20px;
+  flex-grow: 1;
+  padding-top: 20px;
 }
 
 .side-bar-container {
@@ -60,13 +75,70 @@ img{
 }
 
 @media (max-width: 1200px) {
-    .side-bar-container {
+  .side-bar-container {
     padding-left: 20px;
-}
+  }
 }
 
 @media (max-width: 960px) {
-    .side-bar-container {
+  .side-bar-container {
     padding-left: 10px;
+  }
 }
+
+/* ======================================== */
+.navbar{
+    background-color: var(--tp-white-bg);
+    position: sticky;
+    padding: 0px 20px;
+    width: 100%;
+}
+.admin-name{
+    cursor: pointer;
+}
+.admin-name i {
+  color: var(--tp-primary-color);
+  font-size: 34px;
+}
+
+.admin-name h5 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--tp-black-color);
+  margin: 0px;
+}
+
+
+
+.credential-container {
+    background-color: var(--tp-white-bg);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.custom-divider {
+     height: 60px;
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+#credential-btn {
+    background-color: transparent; 
+    border: none;                 
+    cursor: pointer;             
+    font-size: 32px;               
+    color: var(--tp-black-color);             
+    transition: color 0.4s, transform 0.3s;
+    margin: 0px;
+}
+
+#credential-btn:hover {
+    color: var(--tp-primary-color);
+    transform: scale(1.1);          
+}
+
+#credential-btn:focus {
+    outline: none; /* remove default focus outline */
 }
