@@ -246,16 +246,6 @@ img {
 .grid-item-1 {
   gap: 20px;
 }
-.grid-item {
-  background: #4a90e2;
-  border-radius: 12px;
-  padding: 20px;
-  color: white;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .short-data-base {
   background-color: var(--tp-white-bg);
@@ -336,12 +326,58 @@ img {
 /* ======================== */
 
 .grid-item-3 {
-  width: 424px;
-  height: 437px;
   background-color: var(--tp-white-bg);
   border-radius: 12px;
+  padding: 20px;
 }
 
+.book-worm-admin-container {
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 6px;
+  padding-right: 10px;
+}
+
+.book-worm-admin-inner-color {
+  background: #c7c7c77a;
+  border-radius: 12px;
+  position: relative;
+  padding: 4% 26% 4% 6%;
+}
+.active-area {
+  position: absolute;
+  bottom: 8px;
+  right: 14px;
+  gap: 4px;
+}
+.active-area h6 {
+  color: var(--tp-black-color);
+  font-weight: 500;
+  font-size: 10px;
+  margin: 0px;
+  line-height: 140%;
+}
+
+.active-area i {
+  display: block;
+  font-size: 8px;
+}
+
+.book-worm-name-container h3{
+  font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+color: var(--tp-black-color);
+margin: 0px;
+}
+
+.book-worm-name-container h5{
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+margin: 0px;
+
+}
 /* ======================== */
 
 @media (max-width: 1200px) {
