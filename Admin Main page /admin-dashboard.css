@@ -1,6 +1,6 @@
 :root {
   --tp-primary-color: #1e90ff;
-  --tp-bg-color: #f9f9f9;
+  --tp-bg-color: #f2f2f2;
   --tp-white-bg: #ffffff;
   --tp-black-color: #1c1c1e;
   --tp-gray-color: #718096;
@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--tp-bg-color);
+  background-color: #f2f2f2;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
 }
@@ -30,10 +30,27 @@ h3 {
   font-size: 13px;
   line-height: 140%;
   color: var(--tp-black-color);
+  margin: 0px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  color: var(--tp-black-color);
 }
 
 img {
   max-width: 100%;
+}
+
+.small-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 0px;
 }
 /* ================================== */
 .dashboard-section {
@@ -100,7 +117,7 @@ img {
 .navbar {
   background-color: var(--tp-white-bg);
   position: sticky;
-  padding: 0px 20px;
+  padding: 10px;
   width: 100%;
 }
 .admin-name {
@@ -121,7 +138,6 @@ img {
 
 .credential-container {
   background-color: var(--tp-white-bg);
-  padding: 10px 20px;
   border-radius: 8px;
 }
 
@@ -188,7 +204,7 @@ img {
 
 .book-logo {
   width: 100px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .book-logo img {
@@ -219,20 +235,17 @@ img {
   color: #081940;
 }
 
-.area-pie h2 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 140%;
-}
 /* ============================ */
 
 .area-dashboard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
 }
 
+.grid-item-1 {
+  gap: 20px;
+}
 .grid-item {
   background: #4a90e2;
   border-radius: 12px;
@@ -244,21 +257,103 @@ img {
   justify-content: center;
 }
 
+.short-data-base {
+  background-color: var(--tp-white-bg);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
 
+.icon-data {
+  width: 80px;
+  height: 88px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #a7a7a77a;
+}
+
+.icon-data i {
+  font-size: 38px;
+  color: var(--tp-primary-color);
+}
+
+.data-in-number {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.custom-divider-3 {
+  width: 2px;
+  background: var(--tp-black-color);
+  align-self: stretch;
+  margin: 0px 10px;
+}
+
+.data-in-number h1 {
+  font-weight: 1000;
+  font-size: 49px;
+  line-height: 140%;
+  color: var(--tp-black-color);
+  margin: 0px;
+}
+
+.data-in-number h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 140%;
+  color: var(--tp-black-color);
+}
+
+/* ==================== */
+/* BOTH GRID-2 AND GRID -4 ARE SAME */
+.grid-item-same {
+  background-color: var(--tp-white-bg);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.overdue-borrower-container {
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 4px 10px;
+}
+
+.overdue-icon i {
+  font-size: 24px;
+  color: var(--tp-primary-color);
+}
+
+.overdue-name-container h3 {
+  font-size: 16px;
+}
+
+/* ======================== */
+
+.grid-item-3 {
+  width: 424px;
+  height: 437px;
+  background-color: var(--tp-white-bg);
+  border-radius: 12px;
+}
 
 /* ======================== */
 
 @media (max-width: 1200px) {
-
-  .dashboard-view-container{
+  .dashboard-view-container {
     gap: 40px;
   }
-  .pie-chart-container{
+  .pie-chart-container {
     width: 100%;
     flex-direction: row;
   }
 
-  .area-dashboard-grid{
+  .area-dashboard-grid {
     width: 100%;
   }
 }
