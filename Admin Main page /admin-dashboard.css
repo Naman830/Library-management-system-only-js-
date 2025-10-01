@@ -167,6 +167,21 @@ img {
   outline: none;
 }
 
+.hamburger{
+  display: none;
+}
+.hamburger img{
+  width: 34px;
+}
+
+
+@media (max-width: 1000px){
+  .hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* ================================ */
 .dashboard-view-container {
   display: flex;
